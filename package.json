@@ -1,0 +1,44 @@
+{
+  "name": "dragonek-ui",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "./dist/dragonekui.umd.ts",
+  "module": "./dist/dragonekui.es.ts",
+  "types": "./dist/components/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/dragonekui.es.ts",
+      "require": "./dist/dragonekui.umd.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "@storybook/vue3": "^7.4.2",
+    "@storybook/vue3-vite": "^7.4.2",
+    "@types/node": "^20.6.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "storybook": "^7.4.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.5"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  }
+}
